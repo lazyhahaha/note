@@ -1,5 +1,8 @@
 create new repo:
-    curl -u 'USER' https://api.github.com/user/repos -d '{"nam":"REPO"}'
+    curl -u 'USER' https://api.github.com/user/repos -d '{"name":"REPO"}'
 
 add remote:
     git remote add origin https://github.com/laduygaga/REPO
+
+add path to $PATH
+    export PATH=~/path:$PATH
