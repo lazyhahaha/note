@@ -9,3 +9,5 @@
 
 #SWAP CTRL:SWAPCAPS
     setxkbmap -option ctrl:swapcaps
+# Automatically Enable wifi Arch Linux:
+    netctl enable SISD
