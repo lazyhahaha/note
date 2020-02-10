@@ -1,0 +1,20 @@
+# P and NP
+    nếu Một bài toán có thể tìm ra đáp án là P( có thể kiểm tra trong thời gian đa chức):
+        Thì có thể tìm ra cách giải NP( cách giải có thời gian đa chức) hay không?
+        Ví dụ: cho a = [1,2,3,4]; tim trong tap hop cac so trong a co tong bang 5. De dang tim duoc va kiem tra [1,4] [2,3]. Nhung lieu co tim duoc cach giai co thoi gian tuong ung voi thoi gian kiem tra hay khong?
+
+# Dynamic Programming ( quy hoach dong)
+    Giam so lan tinh toan.
+        vi du: def f(n):
+                   if n <=1:
+                       return n
+                   else:
+                       return f(n-1) + f(n-2)
+                       => khong ap dung thuat toan quy hoach dong( moi lan tinh phai tinh lai ket qua truoc do)
+
+               def f(n):
+                   f = [1] * n 
+                   for i in range(2, n):
+                       f[i] = f(i-1) + f(i-2)
+                   return f
+                   => co su dung thuat toan quy hoach dong( chi tinh f[i] mot lan, luu vao list f)
