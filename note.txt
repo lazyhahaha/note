@@ -2,6 +2,7 @@
     curl -u 'USER' https://api.github.com/user/repos -d '{"name":"REPO"}'
 
 #add remote:
+    git init
     git remote add origin https://github.com/laduygaga/REPO
 
 #add path to $PATH
